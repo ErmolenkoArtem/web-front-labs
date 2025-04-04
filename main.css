@@ -1,0 +1,61 @@
+body {
+    background-color: lightblue;
+    color: maroon;
+    font-family: Arial;
+    margin: 0px;
+}
+main {
+    background-color: lightgreen;
+    color: blue;
+    font-family: Arial;
+    margin: 10px 20px 45px;
+}
+footer {
+    background-color: black;
+    color: lightgreen;
+    padding: 10px;
+    font-size: 16pt;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+header {
+    background-color: lightgreen;
+    color: blue;
+    font-family: Arial;
+    margin: 0px;
+}
+a {
+    color: green;
+    text-decoration: none;
+    transition: 1s 2s;
+}
+a:link {
+    color: darkcyan;
+    text-decoration: none;
+}
+a:visited {
+    color: grey;
+    text-decoration: underline;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+a:active {
+    color: black;
+    opacity: 0.3;
+}
+div.menu {
+    border: 3px solid #7c7c7c80;
+    border-radius: 10px;
+    width: 240px;
+    margin: 0 auto;
+}
+div.menu:hover {
+    background-color: #02240430;
+    box-shadow: 0 0 15x #00000030;
+}
