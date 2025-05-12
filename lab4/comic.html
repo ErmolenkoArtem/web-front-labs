@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ермоленко Артём Эдуардович. Комикс</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon/favicon-32x32.png" type="image/x-icon">
+    <style>
+        .comic-container {
+            width: 700px;
+            margin: 20px auto;
+        }
+        
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+            
+        .bubble {
+            position: absolute;
+            padding: 10px 15px;
+            border-radius: 50%;
+            background-color: #fff8f8;
+            border: 2px solid #999;
+            color: #660033;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .b1 { 
+            top: 280px; 
+            left: 860px; 
+            width: 20px; 
+            height: 5px; 
+            transition-delay: 0.2s; 
+        }
+        .b2 { 
+            top: 250px; 
+            left: 910px; 
+            width: 30px; 
+            height: 10px; 
+            transition-delay: 0.4s; 
+        }
+        .b3 { 
+            top: 220px; 
+            left: 970px; 
+            width: 40px; 
+            height: 15px; 
+            transition-delay: 0.6s; 
+        }
+        .b4 {
+            top: 180px;
+            left: 1040px;
+            width: 170px;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+            transition-delay: 0.8s;
+        }
+
+        .comic-container:hover .bubble {
+        opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        НГТУ, ФБ, Лабораторная работа 4
+    </header>
+
+    <main>
+        <div class="comic-container">
+            <img src="../picture/408953c904028da536a30b2b2878e138.png" alt="Кот Леопольд">
+            <div class="bubble b1"></div>
+            <div class="bubble b2"></div>
+            <div class="bubble b3"></div>
+            <div class="bubble b4">Давайте жить дружно!</div>
+        </div>
+      </main>
+
+    <footer>
+        &copy; Ермоленко Артём Эдуардович, ФБИ-32, 2 курс, 2025
+    </footer>
+</body>
+</html>

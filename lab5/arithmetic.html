@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ермоленко Артём Эдуардович. Арифметика</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon/favicon-32x32.png" type="image/x-icon">
+    <script>
+        function showSum() {
+            let inputA = document.getElementById('numberA');
+            let inputB = document.getElementById('numberB');
+
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+
+            if (isNaN(a)) {
+                alert('Введите числовое значение в первое поле');
+                inputA.focus();
+                inputA.select();
+                inputA.style.color = 'red';
+                inputA.style.borderColor = 'red';
+                return;
+            } else {
+                inputA.style.color = '';
+                inputA.style.borderColor = '';
+            }
+
+            if (isNaN(b)) {
+                alert('Введите числовое значение во второе поле');
+                inputB.focus();
+                inputB.select();
+                inputB.style.color = 'red';
+                inputB.style.borderColor = 'red';
+                return;
+            } else {
+                inputB.style.color = '';
+                inputB.style.borderColor = '';
+            }
+
+            let result = a + b;
+            alert('Сумма ' + a + ' и ' + b + ' равна ' + result);
+        }
+
+        function showDif() {
+            let inputA = document.getElementById('numberA');
+            let inputB = document.getElementById('numberB');
+
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+
+            if (isNaN(a)) {
+                alert('Введите числовое значение в первое поле');
+                inputA.focus();
+                inputA.select();
+                inputA.style.color = 'red';
+                inputA.style.borderColor = 'red';
+                return; 
+            } else {
+                inputA.style.color = '';
+                inputA.style.borderColor = '';
+            }
+
+            if (isNaN(b)) {
+                alert('Введите числовое значение во второе поле');
+                inputB.focus();
+                inputB.select();
+                inputB.style.color = 'red';
+                inputB.style.borderColor = 'red';
+                return;
+            } else {
+                inputB.style.color = '';
+                inputB.style.borderColor = '';
+            }
+
+            let result = a - b;
+            alert('Разность ' + a + ' и ' + b + ' равна ' + result);
+        }
+
+        function showMult() {
+            let inputA = document.getElementById('numberA');
+            let inputB = document.getElementById('numberB');
+
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+
+            if (isNaN(a)) {
+                alert('Введите числовое значение в первое поле');
+                inputA.focus();
+                inputA.select();
+                inputA.style.color = 'red';
+                inputA.style.borderColor = 'red';
+                return;
+            } else {
+                inputA.style.color = '';
+                inputA.style.borderColor = '';
+            }
+
+            if (isNaN(b)) {
+                alert('Введите числовое значение во второе поле');
+                inputB.focus();
+                inputB.select();
+                inputB.style.color = 'red';
+                inputB.style.borderColor = 'red';
+                return;
+            } else {
+                inputB.style.color = '';
+                inputB.style.borderColor = '';
+            }
+
+            let result = a * b;
+            alert('Произведение ' + a + ' и ' + b + ' равно ' + result);
+        }
+
+        function showDiv() {
+            let inputA = document.getElementById('numberA');
+            let inputB = document.getElementById('numberB');
+
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            if (b==0) {
+                alert('На ноль делить нельзя!');
+                inputB.focus();
+                inputB.select();
+                inputB.style.color = 'red';
+                inputB.style.borderColor = 'red';
+                return;
+            }
+
+            if (isNaN(a)) {
+                alert('Введите числовое значение в первое поле');
+                inputA.focus();
+                inputA.select();
+                inputA.style.color = 'red';
+                inputA.style.borderColor = 'red';
+                return;
+            } else {
+                inputA.style.color = '';
+                inputA.style.borderColor = '';
+            }
+
+            if (isNaN(b)) {
+                alert('Введите числовое значение во второе поле');
+                inputB.focus();
+                inputB.select();
+                inputB.style.color = 'red';
+                inputB.style.borderColor = 'red';
+                return;
+            } else {
+                inputB.style.color = '';
+                inputB.style.borderColor = '';
+            }
+
+            let result = a/b;
+            alert(a + ' / ' + b + ' = ' + result);
+        }
+
+        function showDeg() {
+            let inputA = document.getElementById('numberA');
+            let inputB = document.getElementById('numberB');
+
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+
+            if (isNaN(a)) {
+                alert('Введите числовое значение в первое поле');
+                inputA.focus();
+                inputA.select();
+                inputA.style.color = 'red';
+                inputA.style.borderColor = 'red';
+                return;
+            } else {
+                inputA.style.color = '';
+                inputA.style.borderColor = '';
+            }
+
+            if (isNaN(b)) {
+                alert('Введите числовое значение во второе поле');
+                inputB.focus();
+                inputB.select();
+                inputB.style.color = 'red';
+                inputB.style.borderColor = 'red';
+                return;
+            } else {
+                inputB.style.color = '';
+                inputB.style.borderColor = '';
+            }
+
+            if (a==0 & b==0) {
+                alert("Оба поля равны нулю");
+                inputA.style.color = 'red';
+                inputB.style.color = 'red';
+                inputA.style.borderColor = 'red';
+                inputB.style.borderColor = 'red';
+                inputA.focus();
+                return;
+            }
+            
+            let result = a**b;
+            alert(a + ' ^ ' + b + ' = ' + result);
+        }
+
+        function showAuthor() {
+            let author = 'Автор страницы:\nЕрмоленко Артём Эдуардович Дмитриевич';
+            alert(author);
+        }
+
+        function showWelcome() {
+            let welcome = 'Добро пожаловать на мою страницу!\nИзучай, развивайся, преуспевай!';
+            alert(welcome);
+        }
+
+        function changeOutput(buttonNum, backColor, textColor, bordColor, bordStyle, bordWidth, bordRadius) {
+            let output = document.getElementById('output');
+            output.innerHTML = 'Нажата кнопка ' + buttonNum;
+            output.style.backgroundColor = backColor;
+            output.style.color = textColor;
+            output.style.borderColor = bordColor;
+            output.style.borderStyle = bordStyle;
+            output.style.borderWidth = bordWidth;
+            output.style.borderRadius = bordRadius;
+        }
+    </script>
+    <style>
+        label {
+            color: maroon;
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        header {
+            cursor: pointer;
+        }
+
+        footer {
+            cursor: pointer;
+        }
+
+        .message {
+            border: 2px solid green;
+            border-radius: 5px;
+            display: inline-block;
+            width: 250px;
+            height: 20px;
+            text-align: center;
+            margin: 30px 10px;
+            padding: 10px 10px;
+            background-color: lightgray;
+            color: maroon;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .message_author {
+            border: 2px solid green;
+            border-radius: 5px;
+            position: absolute;
+            top: 550px;
+            right: 10px;
+            width: 250px;
+            height: 20px;
+            text-align: center;
+            margin: 30px 10px;
+            padding: 10px 10px;
+            background-color: lightgray;
+            color: maroon;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        #output {
+            border: 1px solid;
+            width: 300px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header onclick="showAuthor()">
+        НГТУ, ФБ, Лабораторная работа 5
+    </header>
+
+    <main>
+        <label>Первое число: <input type="number" value="5154" id="numberA"></label><br>
+        <label>Второе число: <input type="number" value="7891" id="numberB"></label><br>
+        <div class="message" onclick="showSum()">Найти сумму чисел</div>
+        <div class="message" onclick="showDif()">Найти разность чисел</div>
+        <div class="message" onclick="showMult()">Найти произведение чисел</div>
+        <div class="message" onclick="showDiv()">Найти отношение чисел</div>
+        <div class="message" onclick="showDeg()">Найти возведение в степень</div>
+        <div class="message_author" onclick="showAuthor()">Узнать, кто автор страницы</div>
+
+        <div>
+            <input type="button" value="Кнопка 1" onclick="changeOutput(1, 'red', 'yellow', 'black', 'dashed', '5px', '50px')">
+            <input type="button" value="Кнопка 2" onclick="changeOutput(2, 'black', 'lime', 'green', 'solid', '3px', '10px')">
+            <input type="button" value="Кнопка 3" onclick="changeOutput(3, 'blue', 'red', 'pink', 'dashed', '7px', '12px')">
+            <input type="button" value="Кнопка 4" onclick="changeOutput(4, 'navy', 'lightpink', 'brown', 'solid', '10px', '30px')"> 
+        </div>
+
+        <div id="output"></div>
+    </main>
+
+    <footer ondblclick="showWelcome()">
+        &copy; Ермоленко Артём Эдуардович, ФБИ-32, 2 курс, 2025
+    </footer>
+</body>
+</html>
