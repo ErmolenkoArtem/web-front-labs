@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ермоленко Артём Эдуардович. Добавление блоков</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon/favicon-32x32.png" type="image/x-icon">
+
+    <script>
+        function addNewBlock() {
+            let newBlock = document.createElement('div');
+            newBlock.style.backgroundColor = 'green';
+            newBlock.style.height = '40px';
+            newBlock.style.margin = '10px';
+            newBlock.style.border =  '5px solid yellow';
+            document.querySelector('main').appendChild(newBlock);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        НГТУ, ФБ, Лабораторная работа 7
+    </header>
+
+    <main>
+        <button onclick="addNewBlock()" style="margin: 10px; height: 50px; width: 200px; background-color: aqua;">
+            Добавить блок
+        </button>
+    </main>
+
+    <footer>
+        &copy; Ермоленко Артём Эдуардович, ФБИ-32, 2 курс, 2025
+    </footer>
+</body>
+</html>
