@@ -1,5 +1,5 @@
 body {
-    background-color: lightblue;
+    background-color: blanchedalmond;
     color: maroon;
     font-family: Arial;
     margin: 0;
@@ -14,7 +14,7 @@ main {
 
 header {
     background-color: black; 
-    color: lightgreen; 
+    color: lightblue; 
     padding: 20px; 
     font-size: 16pt;
     position: fixed;
@@ -26,7 +26,7 @@ header {
 
 footer {
     background-color: black; 
-    color: lightgreen; 
+    color: lightblue; 
     padding: 20px; 
     font-size: italic; 
     text-align: right;

@@ -55,7 +55,7 @@
                     const previousRate = json.Valute.EUR.Previous;
                     const date = new Date(json.Date).toLocaleDateString('ru-RU');
                     const diff = (currentRate - previousRate).toFixed(4);
-                    const trend = diff > 0 ? "Курс поднялся 📈" : diff < 0 ? "Курс опустился 📉" : "Курс не изменился";
+                    const trend = diff > 0 ? "Курс поднялся ↗️" : diff < 0 ? "Курс опустился ↘️" : "Курс не изменился";
 
                     const infoDiv = document.createElement('div');
                     infoDiv.className = 'euro-info';
