@@ -16,9 +16,9 @@ header {
     left: 0;
     right: 0;
     height: 80px;
-    background-color: rgba(197,208,230);
+    background-color: rgb(230, 197, 197);
     z-index: 1000;
-    border: 2px blue solid;
+    border: 2px rgb(255, 0, 0) solid;
 }
 
 header img {
@@ -33,10 +33,10 @@ header.scrolled {
 }
 
 footer {
-    background-color: rgba(197,208,230);
+    background-color: rgb(230, 197, 197);
     padding: 20px 50px 5px;
     height: 80px;
-    border: 2px blue solid;
+    border: 2px rgb(255, 0, 0) solid;
 }
 
 .div-footer {
@@ -59,12 +59,12 @@ div {
 }
 
 a {
-    color: blue;
+    color: rgb(255, 0, 0);
     text-decoration: none;
 }
 
 a:hover {
-    color: #99bbd8;
+    color: #d89999;
 }
 
 .darken-on-hover:hover {
@@ -74,7 +74,7 @@ a:hover {
 
 .sidebar {
     width: 180px;
-    background-color: rgba(197,208,230);
+    background-color: rgb(230, 197, 197);
     padding-top: 100px;
 }
 
@@ -87,18 +87,18 @@ a:hover {
 .sidebar a {
     display: block;
     padding: 15px 20px;
-    color: #003366;
+    color: #660000;
     text-decoration: none;
     transition: background-color 0.2s, color 0.2s;
 }
   
 .sidebar a:hover {
-    background-color: #c0d4e4;
+    background-color: #e4c0c0;
     color: #000;
   }
   
 .sidebar a.active {
-    background-color: #99bbd8;
+    background-color: #d89999;
     color: white;
     font-weight: bold;
 }
@@ -107,7 +107,7 @@ a:hover {
     position: fixed;
     bottom: 15px;
     left: 15px;
-    background-color: rgba(19, 83, 209, 0.9);
+    background-color: rgba(209, 19, 19, 0.9);
     color: black;
     padding: 10px 15px;
     border-radius: 5px;
@@ -118,5 +118,5 @@ a:hover {
 }
 
 .scroll-to-top:hover {
-    background-color: rgba(234, 237, 240, 0.95);
+    background-color: rgba(240, 234, 234, 0.95);
 }       
